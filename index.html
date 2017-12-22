@@ -1,0 +1,219 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="ja"><![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8" lang="ja"><![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9" lang="ja"><![endif]-->
+<!--[if gt IE 8]><!--><html class="no-js" lang="ja"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Example</title>
+  <link  href="vendor/bootstrap/bootstrap.min.css" rel="stylesheet" media="screen">
+  <link  href="vendor/semantic/semantic.min.css" rel="stylesheet" media="screen">
+  <link  href="vendor/sliding/grid.css" rel="stylesheet" media="screen">
+  <link  href="vendor/sliding/layout.css" rel="stylesheet" media="screen">
+  <link  href="vendor/sliding/normalize.min.css" rel="stylesheet" media="screen">
+  <link  href="vendor/sliding/ui-toggle.css" rel="stylesheet" media="screen">
+  <link  href="vendor/fontawesome/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link  href="css/style.css" rel="stylesheet" media="screen">
+  <link  href="css/layout-hompage.css" rel="stylesheet" media="screen">
+  <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+  <script src="vendor/initializr/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+</head>
+<body>
+
+<header class="page-header">
+  <div class="container">
+
+  </div><!-- ..container -->
+
+  <div class="nav-bar flag">
+    <div class="inner">
+      <div class="left-control">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+        <img class="fa-close" src="images/ico-close.png" alt="">
+      </div><!-- .left-control -->
+      <div class="right-meta">
+        <select class="ui dropdown">
+          <option value="">English</option>
+          <option value="1">Japan</option>
+          <option value="0">American</option>
+        </select>
+      </div><!--.right-meta  -->
+      <ul class="nav">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Schedule</a></li>
+        <li><a href="#">Setting</a></li>
+        <li><a href="#">Users</a></li>
+      </ul><!-- .nav -->
+      <ul class="meta-nav">
+        <li><a href="#">Help</a></li>
+        <li><a href="#">Support</a></li>
+        <li><a class="hl" href="#">Logout</a></li>
+      </ul><!-- .meta-nav -->
+    </div><!-- .inner -->
+  </div><!-- .nav-bar -->
+  <div class="bg-nav"></div>
+  <div class="logo">
+    <a href="#"><img src="images/logo.png" alt=""></a>
+  </div><!-- .logo -->
+</header>
+<!-- /.page-header -->
+
+<main class="page-main">
+  <div class="bg-page-main">
+    <img src="images/bg-page-main.jpg" alt="">
+  </div><!-- .bg-page-main -->
+  <div class="container">
+    <div class="sidebar">
+        <ul class="nav nav-tabs">
+          <li class="active"><a data-toggle="tab" href="#tab1">All</a></li>
+          <li><a data-toggle="tab" href="#menu1">Level 1</a></li>
+          <li><a data-toggle="tab" href="#menu2">level 2</a></li>
+          <li><a data-toggle="tab" href="#menu2">Level 3</a></li>
+        </ul>
+        <div class="tab-content">
+          <div id="tab1" class="tab-pane fade in active">
+            <div class="top-meta clearfix">
+              <div class="meta-left">
+                <span>Sort by:</span>
+                <select class="ui dropdown">
+                    <option value="">Titles(alphabetical)</option>
+                    <option value="1">Titles(alphabetical)</option>
+                    <option value="0">Female</option>
+                </select>
+              </div>
+              <div class="meta-right">
+                <span class="button-on">All On</span>
+                <span class="button-off">All off</span>
+              </div><!-- .meta-right -->
+            </div><!-- .top-meta -->
+            <div class="sd-section">
+              <ul>
+                <li class="clearfix">
+                  <div class="thumbnail">
+                    <img src="images/ico-sidebar-1.jpg" alt="">
+                  </div><!-- .thumbnail -->
+                  <div class="temperature">
+                    <span>Meeting Room 1</span>
+                    <span class="hl">21°C</span>
+                    <div class="icon">
+                      <img src="images/icon1.jpg" alt="">
+                      <img src="images/icon2.jpg" alt="">
+                      <img src="images/icon3.jpg" alt="">
+                    </div><!-- .icon -->
+                  </div><!-- .temperature -->
+                  <div class="right-meta">
+                    <div class="toggle-switch">
+                      <span class="on">on</span><i class="slider"></i><span class="off">off</span>
+                    </div><!-- .toggle-switch -->
+                    <div class="text">
+                      <span>25°C</span><img src="images/icon-thermometer.jpg" alt="">
+                    </div><!-- text -->
+                  </div><!-- .right-meta -->
+                </li>
+                <li class="clearfix">
+                  <div class="thumbnail">
+                    <img src="images/ico-sidebar-2.jpg" alt="">
+                  </div><!-- .thumbnail -->
+                  <div class="temperature">
+                    <span>Meeting Room 2</span>
+                    <span class="hl">18°C</span>
+                    <div class="icon">
+                      <img src="images/icon4.jpg" alt="">
+                      <img src="images/icon2.1.jpg" alt="">
+                      <img src="images/icon3.jpg" alt="">
+                    </div><!-- .icon -->
+                  </div><!-- .temperature -->
+                  <div class="right-meta">
+                    <div class="toggle-switch">
+                      <span class="on">on</span><i class="slider"></i><span class="off">off</span>
+                    </div><!-- .toggle-switch -->
+                    <div class="text">
+                      <span>25°C</span><img src="images/icon-thermometer.jpg" alt="">
+                    </div><!-- text -->
+                  </div><!-- .right-meta -->
+                </li>
+                <li class="clearfix">
+                  <div class="thumbnail">
+                    <img src="images/ico-sidebar-3.jpg" alt="">
+                  </div><!-- .thumbnail -->
+                  <div class="temperature">
+                    <span>Meeting Room 3</span>
+                    <span class="hl">20.5°C</span>
+                    <div class="icon">
+                      <img src="images/icon5.jpg" alt="">
+                      <img src="images/icon2.1.jpg" alt="">
+                      <img src="images/icon3.jpg" alt="">
+                    </div><!-- .icon -->
+                  </div><!-- .temperature -->
+                  <div class="right-meta">
+                    <div class="toggle-switch">
+                      <span class="on">on</span><i class="slider"></i><span class="off">off</span>
+                    </div><!-- .toggle-switch -->
+                    <div class="text">
+                      <span>25°C</span><img src="images/icon-thermometer.jpg" alt="">
+                    </div><!-- text -->
+                  </div><!-- .right-meta -->
+                </li>
+                <li class="clearfix">
+                  <div class="thumbnail">
+                    <img src="images/ico-sidebar-3.jpg" alt="">
+                  </div><!-- .thumbnail -->
+                  <div class="temperature">
+                    <span>Meeting Room 4</span>
+                    <span class="hl">18.5°C</span>
+                    <div class="icon">
+                      <img src="images/icon6.jpg" alt="">
+                      <img src="images/icon2.1.jpg" alt="">
+                      <img src="images/icon3.jpg" alt="">
+                    </div><!-- .icon -->
+                  </div><!-- .temperature -->
+                  <div class="right-meta">
+                    <div class="toggle-switch bt-active">
+                      <span class="on hide">on</span><i class="slider f-left"></i><span class="off">off</span>
+                    </div><!-- .toggle-switch -->
+                    <div class="text">
+                      <span>20.5°C</span><img src="images/icon-thermometer.jpg" alt="">
+                    </div><!-- text -->
+                  </div><!-- .right-meta -->
+                </li>
+                <li class="clearfix flag-text">
+                  <div class="temperature">
+                    <span>Meeting Room 5</span>
+                  </div><!-- .temperature -->
+                  <div class="right-meta">
+                    <div class="toggle-switch">
+                      <span class="on">on</span><i class="slider"></i><span class="off">off</span>
+                    </div><!-- .toggle-switch -->
+                  </div><!-- .right-meta -->
+                </li>
+              </ul>
+            </div><!-- .sd-section -->
+          </div>
+          <div id="menu1" class="tab-pane fade">
+            <h3>Menu 1</h3>
+            <p>Some content in menu 1.</p>
+          </div>
+          <div id="menu2" class="tab-pane fade">
+            <h3>Menu 2</h3>
+            <p>Some content in menu 2.</p>
+          </div>
+        </div>
+    </div><!-- .sidebar -->
+    <div class="main-content">
+
+    </div><!-- .main-content -->
+
+  </div><!-- .container -->
+</main>
+<!-- /.page-main -->
+<script src="vendor/jquery/jquery-1.11.3.min.js"></script>
+<script src="vendor/bootstrap/bootstrap.min.js"></script>
+<script src="vendor/semantic/semantic.min.js"></script>
+<script src="vendor/sliding/jquery.toggler.js"></script>
+<script src="scripts/main.js"></script>
+
+</body>
+</html>
+

@@ -10,6 +10,7 @@
   <title>Example</title>
   <link  href="vendor/bootstrap/bootstrap.min.css" rel="stylesheet" media="screen">
   <link  href="vendor/semantic/semantic.min.css" rel="stylesheet" media="screen">
+  <link  href="vendor/jquery-ui/jquery-ui.css" rel="stylesheet" media="screen">
   <link  href="vendor/sliding/grid.css" rel="stylesheet" media="screen">
   <link  href="vendor/sliding/layout.css" rel="stylesheet" media="screen">
   <link  href="vendor/sliding/normalize.min.css" rel="stylesheet" media="screen">
@@ -75,13 +76,13 @@
         <div class="tab-content">
           <div id="tab1" class="tab-pane fade in active">
             <div class="top-meta clearfix">
-              <div class="meta-left">
-                <span>Sort by:</span>
-                <select class="ui dropdown">
-                    <option value="">Titles(alphabetical)</option>
-                    <option value="1">Titles(alphabetical)</option>
-                    <option value="0">Female</option>
-                </select>
+            <div class="meta-left">
+                  <span>Sort by:</span>
+                  <select class="ui dropdown">
+                      <option value="">Titles(alphabetical)</option>
+                      <option value="1">Titles(alphabetical)</option>
+                      <option value="0">Female</option>
+                 </select>
               </div>
               <div class="meta-right">
                 <span class="button-on">All On</span>
@@ -202,15 +203,125 @@
         </div>
     </div><!-- .sidebar -->
     <div class="main-content">
-
-    </div><!-- .main-content -->
-
+      <div class="top-control clearfix">
+        <div class="bg-control">
+          <img src="images/bg-page-main.jpg" alt="">
+        </div><!-- .bg-control -->
+        <div class="inner">
+          <select class="ui dropdown">
+            <option value="">Meeting room 1</option>
+            <option value="1">Meeting room 2</option>
+            <option value="0">Meeting room 3</option>
+          </select>
+          <div class="toggle-switch">
+            <span class="on">on</span><i class="slider"></i><span class="off">off</span>
+          </div><!-- .toggle-switch -->
+          <div class="main-circle">
+            <div class="inner-content">
+              <span class="icon-press plus-icon"></span>
+              <div class="text-number tex1"><span id="number">20.5 </span><span>°c</span></div>
+              <span class="title-text">Current Room Temp</span>
+              <div class="text-number text2"><span id="number-room">20.5</span><span>°c</span></div>
+              <span class="icon-press minus-icon"></span>
+              <div class="bg-main-circle">
+                  <img src="images/bg-circle.jpg" alt="">
+              </div><!-- .circle -->
+              <canvas id="canvasc" width="210" height="207" style="none">
+              </canvas>
+            </div><!-- .inner-content -->
+          </div><!-- .main-cilcle -->
+        </div>
+      </div><!-- .top-control -->
+      <div class="bt-control clearfix">
+        <div class="md-icon">
+          <ul>
+            <li>
+              <img src="images/icon-1.jpg" alt="">
+              <span>Cool</span>
+            </li>
+            <li>
+              <img src="images/icon-2.jpg" alt="">
+              <span>Fan</span>
+            </li>
+            <li>
+              <img src="images/icon-3.jpg" alt="">
+              <span>Dry</span>
+            </li>
+          </ul>
+        </div><!-- .md-icon -->
+        <div class="row-ct clearfix">
+          <div class="wrapper-drag">
+            <div class="inner">
+              <h4>Fan Speed</h4>
+              <div class="drag-drop">
+                <div class="scroll-drag">
+                </div><!-- .scroll-drag -->
+                <img src="images/ico-drag.png" id="draggable" class="ui-widget-content" alt=""/>
+              </div><!-- .drag-drop -->
+              <div class="text-meta">
+                <span id="Lod">Lod</span>
+                <span id="Med">Med</span>
+                <span id="Hi">Hi</span>
+                <span id="Auto">Auto</span>
+              </div><!-- .text-meta -->
+            </div>
+          </div><!-- .wrapper-drag -->
+          <div class="fan-angle">
+            <div class="inner">
+              <h4>Fan Angle</h4>
+              <div class="fan">
+                <div class="circle-inner"></div>
+                <div class="propeller propeller1 active"></div>
+                <div class="propeller propeller2"></div>
+                <div class="propeller propeller3"></div>
+                <div class="propeller propeller4"></div>
+                <div class="propeller propeller5"></div>
+              </div><!-- .fan -->
+              <div class="button-angle">
+                <div class="bt-angle buttom-dow class0"><img src="images/bt-down.png" alt=""></div>
+                <div class="bt-angle buttom-up"><img src="images/bt-up.png" alt=""></div>
+                <div class="bt-angle buttom-auto">
+                  <img src="images/bt-auto.png" alt="">
+                  <span>Auto</span>
+                </div>
+              </div><!--.button-angle  -->
+            </div><!-- .inner-->
+          </div><!-- .fan-angle -->
+        </div><!-- .row -->
+        <div class="row-ct mg-bottom">
+          <div class="timer clearfix">
+            <h4>timer</h4>
+            <div class="inner-content clearfix">
+              <div class="toggle-switch">
+                <span class="on">on</span><i class="slider"></i><span class="off">off</span>
+              </div><!-- .toggle-switch -->
+              <select class="ui dropdown">
+                  <option value="">01:00</option>
+                  <option value="1">02:00</option>
+                  <option value="0">03:00</option>
+              </select>
+            </div><!-- .inner-content -->
+          </div><!-- .timer -->
+          <div class="set-back">
+            <h4>Setback</h4>
+            <div class="inner-content">
+              <div class="toggle-switch">
+                <span class="on">on</span><i class="slider"></i><span class="off">off</span>
+              </div><!-- .toggle-switch -->
+              <div class="text">
+                <p>Cool: <span>30°c</span></p>
+                <p>Heat: <span>18°c</span></p>
+              </div><!-- .text -->
+            </div><!-- .inner-content -->
+          </div><!-- .set-back -->
+        </div>
+      </div><!-- .bt-control -->
   </div><!-- .container -->
-</main>
-<!-- /.page-main -->
+</main><!--.page-main -->
 <script src="vendor/jquery/jquery-1.11.3.min.js"></script>
 <script src="vendor/bootstrap/bootstrap.min.js"></script>
 <script src="vendor/semantic/semantic.min.js"></script>
+<script src="vendor/jquery-ui/jquery-ui.js"></script>
 <script src="vendor/sliding/jquery.toggler.js"></script>
 <script src="scripts/main.js"></script>
 
